@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Informações da loja </h1>
+    <h2 id="bla"></h2>
+    <h2 id="Ende"></h2>
+    <h2 id="d"></h2>
+    <h2 id="a"></h2>
+    <h2 id="f"></h2>
+    <script>
+        document.getElementById('bla').textContent = window.sessionStorage.getItem('nome')
+        document.getElementById('Ende').textContent = window.sessionStorage.getItem('endereço')
+        document.getElementById('d').textContent = window.sessionStorage.getItem('dias')
+        document.getElementById('a').textContent = window.sessionStorage.getItem('abertura')
+        document.getElementById('f').textContent = window.sessionStorage.getItem('fechamento')
+    </script>
+</body>
+</html>
